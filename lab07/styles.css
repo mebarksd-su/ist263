@@ -1,6 +1,6 @@
 body{font-family: Georgia, serif;
     background-color: #003049;}
-h1, h2, p, ul,strong, h4{color: #fdf0d5}
+h1, h2, p, ul,strong, h4, caption{color: #fdf0d5}
 .evenrow {background-color: #f2f2f2; }
 h1{font-size: 4em;}
 h2{font-size: 1.57em;}
