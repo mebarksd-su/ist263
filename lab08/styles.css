@@ -1,0 +1,14 @@
+body{font-family: Georgia, serif;
+    background-color: #003049;}
+h1, h2, p, ul,strong, h4, h3,caption,h5{color: #fdf0d5}
+.evenrow {background-color: #f2f2f2; }
+h1{font-size: 4em;}
+h2{font-size: 1.57em;}
+p,ul{font-size: 1.2em;}
+nav a{color: #fdf0d5}
+nav a:hover {background-color: #669bbc;}
+nav {color: #fdf0d5}
+nav{padding: 10px;}
+nav {margin-bottom: 30px}
+form {font-family: Georgia, serif; color: #fdf0d5;}
+form label {font-size: 1em; font-weight: bold; color: #fdf0d5;}
