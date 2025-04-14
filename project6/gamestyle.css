@@ -1,0 +1,14 @@
+body {margin: 0; font-family: 'Chakra Petch', sans-serif; background-image: url('../images/indiegame.jpg'); background-size: cover; background-position: center; background-attachment: fixed; color: #1e1e1e;}
+h1, h2, h3 {color: #000000;}
+header {display: flex; justify-content: space-between; align-items: center; padding: 20px; background: white;}
+header h1 {margin: 0; text-align: center; flex: 1;}
+nav {flex: 1; text-align: right;}
+nav a {color: black; text-decoration: none; margin-left: 10px; font-weight: bold;}
+section {padding: 20px; background-color: #ffffffcc; margin: 20px; border-radius: 8px;}
+h2 {text-align: center;}
+.grid {display: flex; flex-wrap: wrap; justify-content: center; gap: 20px;}
+article {width: 300px; text-align: center;}
+img {width: 100%; height: auto; border-radius: 6px;}
+footer {text-align: center; padding: 10px; background: #ffffffcc; color: black;}
+@media screen and (max-width: 800px) {header {flex-direction: column; align-items: flex-start;} nav {text-align: left; margin-top: 10px;} .grid {flex-direction: column; align-items: center;}}
+.intro {text-align: center; max-width: 800px; margin: 0 auto 30px; font-size: 1.1em; line-height: 1.6;}
