@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Indie Music Slideshow</title>
+  <link rel="stylesheet" href="projectstyle.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@400;700&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+  <header>
+    <h1>The Indie Vault</h1>
+    <nav>
+      <a href="welcome.html">Welcome</a> <span>|</span> 
+      <a href="indiegames.html">Indie Games</a> <span>|</span>
+      <a href="indiemusic.html">Indie Music</a> <span>|</span>
+      <a href="indiecontact.html">Contact/Submit</a>
+    </nav>
+  </header>
+
+<main>
+  <div id="slideshow-container">
+    <h2>Featured Indie Music</h2>
+    <div class="intro">
+      <p>Indie music thrives on authenticity and expression. It's raw, experimental, and driven by artists who make music on their own terms. This page showcases hand-picked indie albums and artists you might not know but absolutely should.</p>
+    </div>
+    <div id="flex-container">
+      <div id="bigview">
+        <div class="album-card">
+          <div id="bigimages">
+            <img src="../images/promusic1.jpeg" alt="Exotic Peng Collection" id="artist1">
+            <img src="../images/promusic2.jpeg" alt="Showbiz!" id="artist2">
+            <img src="../images/promusic3.jpeg" alt="Perpetual Stew" id="artist3">
+            <img src="../images/promusic4.jpeg" alt="Ketsa" id="artist4">
+            <img src="../images/promusic5.jpeg" alt="Jahzzar" id="artist5">
+          </div>
+          <div id="artistinfo">
+            <div id="artist1info">
+              <h2>Exotic Peng Collection by Sonnyjim x Graymatter</h2>
+              <p>A boundary-pushing collection of tracks blending sharp lyricism with atmospheric beats.</p>
+            </div>
+            <div id="artist2info">
+              <h2>Showbiz! by MIKE</h2>
+              <p>An introspective and gritty project that captures the raw spirit of indie rap.</p>
+            </div>
+            <div id="artist3info">
+              <h2>Perpetual Stew</h2>
+              <p>A unique blend of indie rock and heartfelt storytelling.</p>
+            </div>
+            <div id="artist4info">
+              <h2>Ketsa</h2>
+              <p>Experimental soundscapes and vibrant rhythms from an indie pioneer.</p>
+            </div>
+            <div id="artist5info">
+              <h2>Jahzzar</h2>
+              <p>An artist that uses a mix of indie sounds to create a unique listening experience.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="thumbnails">
+      <img src="../images/promusic1.jpeg" alt="Exotic Peng Collection" onclick="ArtistsOff(); ArtistOneOn();">
+      <img src="../images/promusic2.jpeg" alt="Showbiz!" onclick="ArtistsOff(); ArtistTwoOn();">
+      <img src="../images/promusic3.jpeg" alt="Perpetual Stew" onclick="ArtistsOff(); ArtistThreeOn();">
+      <img src="../images/promusic4.jpeg" alt="Ketsa" onclick="ArtistsOff(); ArtistFourOn();">
+      <img src="../images/promusic5.jpeg" alt="Jahzzar" onclick="ArtistsOff(); ArtistFiveOn();">
+    </div>
+  </div>
+
+  <script>
+    function ArtistsOff() {
+      document.getElementById('artist1').style.display = 'none';
+      document.getElementById('artist2').style.display = 'none';
+      document.getElementById('artist3').style.display = 'none';
+      document.getElementById('artist4').style.display = 'none';
+      document.getElementById('artist5').style.display = 'none';
+      document.getElementById('artist1info').style.display = 'none';
+      document.getElementById('artist2info').style.display = 'none';
+      document.getElementById('artist3info').style.display = 'none';
+      document.getElementById('artist4info').style.display = 'none';
+      document.getElementById('artist5info').style.display = 'none';
+    }
+    function ArtistOneOn() {
+      document.getElementById('artist1').style.display = 'block';
+      document.getElementById('artist1info').style.display = 'block';
+    }
+    function ArtistTwoOn() {
+      document.getElementById('artist2').style.display = 'block';
+      document.getElementById('artist2info').style.display = 'block';
+    }
+    function ArtistThreeOn() {
+      document.getElementById('artist3').style.display = 'block';
+      document.getElementById('artist3info').style.display = 'block';
+    }
+    function ArtistFourOn() {
+      document.getElementById('artist4').style.display = 'block';
+      document.getElementById('artist4info').style.display = 'block';
+    }
+    function ArtistFiveOn() {
+      document.getElementById('artist5').style.display = 'block';
+      document.getElementById('artist5info').style.display = 'block';
+    }
+    window.onload = function() {
+      ArtistOneOn();
+    }
+  </script>
+</main>
+
+<footer>
+  <p>© 2025 The Indie Vault</p>
+</footer>
+
+</body>
+</html>
